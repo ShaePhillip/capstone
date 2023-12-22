@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ request.user.username }}!</h1>
+    
+    <p>Your details:</p>
+    <ul>
+        <li>Username: {{ request.user.username }}</li>
+        <li>Email: {{ request.user.email }}</li>
+    </ul>
+
+    <form method="post" action="{% url 'user_auth:logout' %}">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+
+    <form method="post" action="{% url 'bandsite:home' %}">
+        {% csrf_token %}
+        <button type="submit">Home</button>
+    </form>
+</body>
+</html>

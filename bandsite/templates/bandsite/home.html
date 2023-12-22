@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyEWUwHoE033M/JQlmh/jMak/d5dP2ACi+"
+        crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Needtobreathe Fan Site!</h1>
+        <p>
+            NEEDTOBREATHE is an American rock band hailing from Seneca, South Carolina, known for their soulful and
+            anthemic sound. Formed in 2000 by brothers Bear and Bo Rinehart, the band has evolved over the years to
+            become a prominent force in contemporary rock music. Blending elements of Southern rock, folk, and
+            alternative, NEEDTOBREATHE's music is characterized by powerful vocals, heartfelt lyrics, and dynamic
+            instrumentals.
+        </p>
+
+        <p>
+            The band's name reflects their belief in the transformative and life-giving power of music. Their
+            discography includes a diverse range of albums, showcasing their ability to explore various musical styles
+            while maintaining a distinct, authentic sound. NEEDTOBREATHE has garnered acclaim for their energetic live
+            performances, which often feature a mix of intimate ballads and high-energy rock anthems.
+        </p>
+
+        <p>
+            Beyond their musical achievements, the band members are recognized for their philanthropic efforts and
+            commitment to making a positive impact. NEEDTOBREATHE continues to captivate audiences worldwide with their
+            passionate storytelling and compelling musicality.
+        </p>
+        <a href="{% url 'bandsite:songs' %}" class="btn btn-danger link-button">Click here to see the most popular
+            albums and songs from the band in recent times.</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe1ceZh/EIclC1yRYiZwDjNcEXea1dAA5KgeS+qU3uA1aW1fLrB9PpBFAzT6"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyEWUwHoE033M/JQlmh/jMak/d5dP2ACi+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
