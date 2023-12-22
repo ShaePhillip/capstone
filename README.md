@@ -41,6 +41,16 @@ python manage.py migrate
 # Start the development server
 python manage.py runserver
 
+# Creating a new super admin user
+Make sure that you are in the root directory inside your venv before continuing
+
+Once the app is running enter the following in your terminal: 
+python manage.py createsuperuser 
+
+You will be prompted with a username and password
+You will now have access to add new users from the admin panel and remove other users. 
+To gain access to the admin page - once on the homepage, at the end of the url add the following: /admin
+
 # Build the Docker image
 docker build -t needtobreathe-fan-website .
 
