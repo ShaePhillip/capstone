@@ -17,10 +17,10 @@ Follow the steps below to set up and run the project locally.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/needtobreathe-fan-website.git
+git clone https://github.com/shaephillip/capstone.git
 
 # Navigate to the project directory
-cd needtobreathe-fan-website
+cd mywebsite
 
 # Create a virtual environment (optional but recommended)
 python -m venv venv
